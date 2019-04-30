@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.572
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XinP3", "XinP3\XinP3.csproj", "{6F6FA13C-66BD-4BDC-8A1C-DCD1A814DA8C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RESTUtil", "RESTUtil\RESTUtil.csproj", "{770122B1-5D35-43B8-9A31-67EE55E1A4CD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6F6FA13C-66BD-4BDC-8A1C-DCD1A814DA8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F6FA13C-66BD-4BDC-8A1C-DCD1A814DA8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F6FA13C-66BD-4BDC-8A1C-DCD1A814DA8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F6FA13C-66BD-4BDC-8A1C-DCD1A814DA8C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{770122B1-5D35-43B8-9A31-67EE55E1A4CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{770122B1-5D35-43B8-9A31-67EE55E1A4CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{770122B1-5D35-43B8-9A31-67EE55E1A4CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{770122B1-5D35-43B8-9A31-67EE55E1A4CD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {50F6DA42-4CCA-4301-A45B-7F5009F02B90}
+	EndGlobalSection
+EndGlobal
