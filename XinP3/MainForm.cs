@@ -155,21 +155,24 @@ namespace XinP3
                 if(name == "wmc")
                 {
                     lbl_wmc_title.Text = title;
-                    lbl_wmc_title.MouseEnter += new EventHandler((s, e) => { lbl_wmc_title.Cursor = Cursors.Hand; });
+                    lbl_wmc_title.MouseEnter += new EventHandler((s, e) => { lbl_wmc_title.Cursor = Cursors.Hand; lbl_wmc_title.ForeColor = System.Drawing.Color.Yellow;  });
+                    lbl_wmc_title.MouseLeave += new EventHandler((s, e) => { lbl_wmc_title.ForeColor = System.Drawing.Color.Black; });
                     lbl_wmc_title.Click += new EventHandler((s, e) => degrees_title_click(s, e, title, c));
                     lbl_wmc_desc.Text = desc;
                 }
                 else if(name == "hcc")
                 {
                     lbl_hcc_title.Text = title;
-                    lbl_hcc_title.MouseEnter += new EventHandler((s, e) => { lbl_hcc_title.Cursor = Cursors.Hand; });
+                    lbl_hcc_title.MouseEnter += new EventHandler((s, e) => { lbl_hcc_title.Cursor = Cursors.Hand; lbl_hcc_title.ForeColor = System.Drawing.Color.Yellow; });
+                    lbl_hcc_title.MouseLeave += new EventHandler((s, e) => { lbl_hcc_title.ForeColor = System.Drawing.Color.Black; });
                     lbl_hcc_title.Click += new EventHandler((s, e) => degrees_title_click(s, e, title, c));
                     lbl_hcc_desc.Text = desc;
                 }
                 else if(name == "cit")
                 {
                     lbl_cit_title.Text = title;
-                    lbl_cit_title.MouseEnter += new EventHandler((s, e) => { lbl_cit_title.Cursor = Cursors.Hand; });
+                    lbl_cit_title.MouseEnter += new EventHandler((s, e) => { lbl_cit_title.Cursor = Cursors.Hand; lbl_cit_title.ForeColor = System.Drawing.Color.Yellow; });
+                    lbl_cit_title.MouseLeave += new EventHandler((s, e) => { lbl_cit_title.ForeColor = System.Drawing.Color.Black; });
                     lbl_cit_title.Click += new EventHandler((s, e) => degrees_title_click(s, e, title, c));
                     lbl_cit_desc.Text = desc;
                 }
@@ -191,28 +194,32 @@ namespace XinP3
                 if(name == "ist")
                 {
                     lbl_ist_title.Text = title;
-                    lbl_ist_title.MouseEnter += new EventHandler((s, e) => { lbl_ist_title.Cursor = Cursors.Hand; });
+                    lbl_ist_title.MouseEnter += new EventHandler((s, e) => { lbl_ist_title.Cursor = Cursors.Hand; lbl_ist_title.ForeColor = System.Drawing.Color.Yellow; });
+                    lbl_ist_title.MouseLeave += new EventHandler((s, e) => { lbl_ist_title.ForeColor = System.Drawing.Color.Black; });
                     lbl_ist_title.Click += new EventHandler((s, e) => degrees_title_click(s, e, title, c));
                     lbl_ist_desc.Text = desc;
                 }
                 else if(name == "hci")
                 {
                     lbl_hci_title.Text = title;
-                    lbl_hci_title.MouseEnter += new EventHandler((s, e) => { lbl_hci_title.Cursor = Cursors.Hand; });
+                    lbl_hci_title.MouseEnter += new EventHandler((s, e) => { lbl_hci_title.Cursor = Cursors.Hand; lbl_hci_title.ForeColor = System.Drawing.Color.Yellow; });
+                    lbl_hci_title.MouseLeave += new EventHandler((s, e) => { lbl_hci_title.ForeColor = System.Drawing.Color.Black; });
                     lbl_hci_title.Click += new EventHandler((s, e) => degrees_title_click(s, e, title, c));
                     lbl_hci_desc.Text = desc;
                 }
                 else if(name == "nsa")
                 {
                     lbl_nsa_title.Text = title;
-                    lbl_nsa_title.MouseEnter += new EventHandler((s, e) => { lbl_nsa_title.Cursor = Cursors.Hand; });
+                    lbl_nsa_title.MouseEnter += new EventHandler((s, e) => { lbl_nsa_title.Cursor = Cursors.Hand; lbl_nsa_title.ForeColor = System.Drawing.Color.Yellow; });
+                    lbl_nsa_title.MouseLeave += new EventHandler((s, e) => { lbl_nsa_title.ForeColor = System.Drawing.Color.Black; });
                     lbl_nsa_title.Click += new EventHandler((s, e) => degrees_title_click(s, e, title, c));
                     lbl_nsa_desc.Text = desc;
                 }
                 else if(name == "graduate advanced certificates")
                 {
                     lbl_advanced_title.Text = "Gradute Advanced Certificates";
-                    lbl_advanced_title.MouseEnter += new EventHandler((s, e) => { lbl_advanced_title.Cursor = Cursors.Hand; });
+                    lbl_advanced_title.MouseEnter += new EventHandler((s, e) => { lbl_advanced_title.Cursor = Cursors.Hand; lbl_advanced_title.ForeColor = System.Drawing.Color.Yellow; });
+                    lbl_advanced_title.MouseLeave += new EventHandler((s, e) => { lbl_advanced_title.ForeColor = System.Drawing.Color.Black; });
                     lbl_advanced_title.Click += new EventHandler((s, e) => degrees_title_click(s, e, "Gradute Advanced Certificates", _g.availableCertificates));
                 }
             }
@@ -247,7 +254,8 @@ namespace XinP3
                 title.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
                 title.Size = new System.Drawing.Size(330, 47);
                 title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-                title.MouseEnter += new EventHandler((s, e) => { title.Cursor = Cursors.Hand; });
+                title.MouseEnter += new EventHandler((s, e) => { title.Cursor = Cursors.Hand; title.ForeColor = System.Drawing.Color.Yellow; });
+                title.MouseLeave += new EventHandler((s, e) => { title.ForeColor = System.Drawing.Color.Black; });
                 title.Click += new EventHandler((s, e) => minors_title_click(s, e, name, desc, c));
 
                 // Add to panel
@@ -394,7 +402,8 @@ namespace XinP3
                 lName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
                 lName.Size = new System.Drawing.Size(200, 20);
                 lName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-                lName.MouseEnter += new EventHandler((s, e) => { lName.Cursor = Cursors.Hand; });
+                lName.MouseEnter += new EventHandler((s, e) => { lName.Cursor = Cursors.Hand; lName.ForeColor = System.Drawing.Color.Yellow; });
+                lName.MouseLeave += new EventHandler((s, e) => { lName.ForeColor = System.Drawing.Color.Black; });
                 lName.Click += new EventHandler((s, e) => people_title_click(s, e, name, info));
 
                 lTitle.Size = new System.Drawing.Size(200, 65);
@@ -446,7 +455,8 @@ namespace XinP3
                 lName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
                 lName.Size = new System.Drawing.Size(200, 20);
                 lName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-                lName.MouseEnter += new EventHandler((o, e) => { lName.Cursor = Cursors.Hand; });
+                lName.MouseEnter += new EventHandler((o, e) => { lName.Cursor = Cursors.Hand; lName.ForeColor = System.Drawing.Color.Yellow; });
+                lName.MouseLeave += new EventHandler((o, e) => { lName.ForeColor = System.Drawing.Color.Black; });
                 lName.Click += new EventHandler((o, e) => people_title_click(o, e, name, info));
 
                 lTitle.Size = new System.Drawing.Size(200, 65);
@@ -488,7 +498,8 @@ namespace XinP3
                 lName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
                 lName.Size = new System.Drawing.Size(200, 20);
                 lName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-                lName.MouseEnter += new EventHandler((o, e) => { lName.Cursor = Cursors.Hand; });
+                lName.MouseEnter += new EventHandler((s, e) => { lName.Cursor = Cursors.Hand; lName.ForeColor = System.Drawing.Color.Yellow; });
+                lName.MouseLeave += new EventHandler((s, e) => { lName.ForeColor = System.Drawing.Color.Black; });
                 lName.Click += new EventHandler((s, e) => research_title_click(s, e, area, c));
 
                 // Add to panel
@@ -515,7 +526,8 @@ namespace XinP3
                 lName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
                 lName.Size = new System.Drawing.Size(200, 20);
                 lName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-                lName.MouseEnter += new EventHandler((o, e) => { lName.Cursor = Cursors.Hand; });
+                lName.MouseEnter += new EventHandler((s, e) => { lName.Cursor = Cursors.Hand; lName.ForeColor = System.Drawing.Color.Yellow; });
+                lName.MouseLeave += new EventHandler((s, e) => { lName.ForeColor = System.Drawing.Color.Black; });
                 lName.Click += new EventHandler((s, e) => research_title_click(s, e, name, c));
 
                 // Add to panel
@@ -555,7 +567,8 @@ namespace XinP3
             saLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             saLabel.Size = new System.Drawing.Size(330, 47);
             saLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            saLabel.MouseEnter += new EventHandler((o, e) => { saLabel.Cursor = Cursors.Hand; });
+            saLabel.MouseEnter += new EventHandler((s, e) => { saLabel.Cursor = Cursors.Hand; saLabel.ForeColor = System.Drawing.Color.Yellow; });
+            saLabel.MouseLeave += new EventHandler((s, e) => { saLabel.ForeColor = System.Drawing.Color.Black; });
             saLabel.Click += new EventHandler((s, e) => resources_title_click(s, e, "abroad", study));
             saLabel.Text = study.title;
 
@@ -576,7 +589,8 @@ namespace XinP3
             ssLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             ssLabel.Size = new System.Drawing.Size(330, 47);
             ssLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            ssLabel.MouseEnter += new EventHandler((o, e) => { ssLabel.Cursor = Cursors.Hand; });
+            ssLabel.MouseEnter += new EventHandler((s, e) => { ssLabel.Cursor = Cursors.Hand; ssLabel.ForeColor = System.Drawing.Color.Yellow; });
+            ssLabel.MouseLeave += new EventHandler((s, e) => { ssLabel.ForeColor = System.Drawing.Color.Black; });
             ssLabel.Click += new EventHandler((s, e) => resources_title_click(s, e, "services", services));
             ssLabel.Text = services.title;
 
@@ -597,7 +611,8 @@ namespace XinP3
             tLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             tLabel.Size = new System.Drawing.Size(330, 47);
             tLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            tLabel.MouseEnter += new EventHandler((o, e) => { tLabel.Cursor = Cursors.Hand; });
+            tLabel.MouseEnter += new EventHandler((s, e) => { tLabel.Cursor = Cursors.Hand; tLabel.ForeColor = System.Drawing.Color.Yellow; });
+            tLabel.MouseLeave += new EventHandler((s, e) => { tLabel.ForeColor = System.Drawing.Color.Black; });
             tLabel.Click += new EventHandler((s, e) => resources_title_click(s, e, "tutors", tutors));
             tLabel.Text = tutors.title;
 
@@ -618,7 +633,8 @@ namespace XinP3
             aLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             aLabel.Size = new System.Drawing.Size(330, 47);
             aLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            aLabel.MouseEnter += new EventHandler((o, e) => { aLabel.Cursor = Cursors.Hand; });
+            aLabel.MouseEnter += new EventHandler((s, e) => { aLabel.Cursor = Cursors.Hand; aLabel.ForeColor = System.Drawing.Color.Yellow; });
+            aLabel.MouseLeave += new EventHandler((s, e) => { aLabel.ForeColor = System.Drawing.Color.Black; });
             aLabel.Click += new EventHandler((s, e) => resources_title_click(s, e, "ambassadors", ambassadors));
             aLabel.Text = ambassadors.title;
 
@@ -639,7 +655,8 @@ namespace XinP3
             fLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             fLabel.Size = new System.Drawing.Size(330, 47);
             fLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            fLabel.MouseEnter += new EventHandler((o, e) => { fLabel.Cursor = Cursors.Hand; });
+            fLabel.MouseEnter += new EventHandler((s, e) => { fLabel.Cursor = Cursors.Hand; fLabel.ForeColor = System.Drawing.Color.Yellow; });
+            fLabel.MouseLeave += new EventHandler((s, e) => { fLabel.ForeColor = System.Drawing.Color.Black; });
             fLabel.Click += new EventHandler((s, e) => resources_title_click(s, e, "forms", forms));
             fLabel.Text = "Forms";
 
@@ -660,7 +677,8 @@ namespace XinP3
             cLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             cLabel.Size = new System.Drawing.Size(330, 47);
             cLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            cLabel.MouseEnter += new EventHandler((o, e) => { cLabel.Cursor = Cursors.Hand; });
+            cLabel.MouseEnter += new EventHandler((s, e) => { cLabel.Cursor = Cursors.Hand; cLabel.ForeColor = System.Drawing.Color.Yellow; });
+            cLabel.MouseLeave += new EventHandler((s, e) => { cLabel.ForeColor = System.Drawing.Color.Black; });
             cLabel.Click += new EventHandler((s, e) => resources_title_click(s, e, "coop", coop));
             cLabel.Text = coop.title;
 
