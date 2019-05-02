@@ -181,6 +181,13 @@ namespace XinP3.Modal
                 // Set desc mission statement
                 lbl_desc.Text = a.subSectionContent[0].description;
 
+                // Add picture
+                PictureBox pb = new PictureBox();
+                pb.Load(a.ambassadorsImageSource);
+                pb.Size = new Size(700, 150);
+                pb.SizeMode = PictureBoxSizeMode.CenterImage;
+                fp_resources.Controls.Add(pb);
+
                 // For each subsection, create its own labels
                 foreach(SubSectionContent s in a.subSectionContent)
                 {
