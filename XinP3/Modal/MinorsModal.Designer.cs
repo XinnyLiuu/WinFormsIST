@@ -50,13 +50,13 @@
             // 
             this.lbl_minor_desc.Location = new System.Drawing.Point(12, 121);
             this.lbl_minor_desc.Name = "lbl_minor_desc";
-            this.lbl_minor_desc.Size = new System.Drawing.Size(882, 113);
+            this.lbl_minor_desc.Size = new System.Drawing.Size(882, 184);
             this.lbl_minor_desc.TabIndex = 1;
             this.lbl_minor_desc.Text = "desc";
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(15, 286);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(12, 325);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(879, 75);
             this.flowLayoutPanel1.TabIndex = 2;
@@ -65,7 +65,7 @@
             // 
             this.lbl_minors_courses.AutoSize = true;
             this.lbl_minors_courses.ForeColor = System.Drawing.Color.OrangeRed;
-            this.lbl_minors_courses.Location = new System.Drawing.Point(12, 266);
+            this.lbl_minors_courses.Location = new System.Drawing.Point(9, 305);
             this.lbl_minors_courses.Name = "lbl_minors_courses";
             this.lbl_minors_courses.Size = new System.Drawing.Size(60, 17);
             this.lbl_minors_courses.TabIndex = 3;
@@ -76,7 +76,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(906, 368);
+            this.ClientSize = new System.Drawing.Size(906, 412);
             this.Controls.Add(this.lbl_minors_courses);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.lbl_minor_desc);

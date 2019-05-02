@@ -39,8 +39,7 @@ namespace XinP3.Modal
 
                     // Create desc label
                     Label desc = new Label();
-                    desc.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-                    desc.Size = new Size(550, 100);
+                    desc.Size = new Size(650, 100);
                     desc.Text = p.description;
 
                     // Add to flowlayoutpanel
@@ -73,7 +72,7 @@ namespace XinP3.Modal
                 // Set faq
                 LinkLabel faq = new LinkLabel();
                 faq.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-                faq.Size = new Size(500, 50);
+                faq.Size = new Size(650, 50);
                 faq.Text = a.faq.contentHref;
                 faq.LinkClicked += new LinkLabelLinkClickedEventHandler((o, e) => { System.Diagnostics.Process.Start(a.faq.contentHref); faq.LinkVisited = true; });
                 fp_resources.Controls.Add(faq);
@@ -90,7 +89,7 @@ namespace XinP3.Modal
 
                 // Create a label that stores the names of the advisors
                 Label names = new Label();
-                names.Size = new Size(500, 50);
+                names.Size = new Size(650, 50);
                 foreach (AdvisorInformation info in p.advisorInformation)
                 {
                     names.Text += info.name + ", ";
@@ -117,7 +116,7 @@ namespace XinP3.Modal
 
                 // Create a label that stores the names of the advisors
                 Label names2 = new Label();
-                names2.Size = new Size(500, 50);
+                names2.Size = new Size(650, 50);
                 foreach (MinorAdvisorInformation info in i.minorAdvisorInformation)
                 {
                     names2.Text += info.advisor + ", ";
@@ -145,8 +144,7 @@ namespace XinP3.Modal
 
                 // Create desc label
                 Label fDesc = new Label();
-                fDesc.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-                fDesc.Size = new Size(550, 130);
+                fDesc.Size = new Size(650, 130);
                 fDesc.Text = f.description;
                 
                 // Add to flowlayoutpanel
@@ -167,7 +165,7 @@ namespace XinP3.Modal
                 // Create linklabel for tutoring link
                 LinkLabel hours = new LinkLabel();
                 hours.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-                hours.Size = new Size(500, 50);
+                hours.Size = new Size(650, 50);
                 hours.Text = t.tutoringLabHoursLink;
                 hours.LinkClicked += new LinkLabelLinkClickedEventHandler((o, e) => { System.Diagnostics.Process.Start(t.tutoringLabHoursLink); hours.LinkVisited = true; });
                 fp_resources.Controls.Add(hours);
@@ -204,17 +202,27 @@ namespace XinP3.Modal
 
                     if(s.title == "Expectations")
                     {
-                        desc.Size = new Size(550, 85);
+                        desc.Size = new Size(650, 70);
                     }
 
                     if(s.title == "Duties")
                     {
-                        desc.Size = new Size(550, 135);
+                        desc.Size = new Size(650, 120);
                     }
 
-                    if(s.title == "Overview" || s.title == "Criteria" || s.title == "Perks")
+                    if(s.title == "Overview")
                     {
-                        desc.Size = new Size(550, 30);
+                        desc.Size = new Size(650, 40);
+                    }
+
+                    if(s.title == "Criteria")
+                    {
+                        desc.Size = new Size(650, 30); 
+                    }
+
+                    if(s.title == "Perks")
+                    {
+                        desc.Size = new Size(650, 40);
                     }
 
                     if(s.title == "apply")
@@ -226,6 +234,14 @@ namespace XinP3.Modal
                     fp_resources.Controls.Add(title);
                     fp_resources.Controls.Add(desc);
                 }
+
+                // Create LinkLabel for application link
+                LinkLabel ll = new LinkLabel();
+                ll.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+                ll.Size = new Size(650, 50);
+                ll.Text = a.applicationFormLink;
+                ll.LinkClicked += new LinkLabelLinkClickedEventHandler((o, e) => { System.Diagnostics.Process.Start(a.applicationFormLink); ll.LinkVisited = true; });
+                fp_resources.Controls.Add(ll);
             }
 
             if(type == "forms")
@@ -242,7 +258,7 @@ namespace XinP3.Modal
                 grad.ForeColor = System.Drawing.Color.OrangeRed;
                 grad.Text = "Graduate Forms";
                 grad.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-                grad.Size = new Size(500, 20);
+                grad.Size = new Size(650, 20);
                 fp_resources.Controls.Add(grad);
 
                 foreach (GraduateForm gf in f.graduateForms)
@@ -250,7 +266,7 @@ namespace XinP3.Modal
                     // Create linklabel for tutoring link
                     LinkLabel form = new LinkLabel();
                     form.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-                    form.Size = new Size(500, 20);
+                    form.Size = new Size(650, 20);
                     form.Text = gf.formName;
                     form.LinkClicked += new LinkLabelLinkClickedEventHandler((o, e) => { System.Diagnostics.Process.Start(gf.href); form.LinkVisited = true; });
                     fp_resources.Controls.Add(form);
@@ -267,7 +283,7 @@ namespace XinP3.Modal
                 uGrad.ForeColor = System.Drawing.Color.OrangeRed;
                 uGrad.Text = "Undergraduate Forms";
                 uGrad.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-                uGrad.Size = new Size(500, 20);
+                uGrad.Size = new Size(650, 20);
                 fp_resources.Controls.Add(uGrad);
 
                 foreach (UndergraduateForm ufg in f.undergraduateForms)
@@ -275,7 +291,7 @@ namespace XinP3.Modal
                     // Create linklabel for tutoring link
                     LinkLabel form = new LinkLabel();
                     form.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-                    form.Size = new Size(500, 20);
+                    form.Size = new Size(650, 20);
                     form.Text = ufg.formName;
                     form.LinkClicked += new LinkLabelLinkClickedEventHandler((o, e) => { System.Diagnostics.Process.Start(ufg.href); form.LinkVisited = true; });
                     fp_resources.Controls.Add(form);
@@ -311,14 +327,19 @@ namespace XinP3.Modal
                     Label desc = new Label();
                     desc.Text = e.description;
 
-                    if (e.title == "How to enroll in a co-op you found on JobZone" || e.title == "Approval Process")
+                    if (e.title == "Approval Process")
                     {
-                        desc.Size = new Size(550, 20);
+                        desc.Size = new Size(650, 40);
+                    }
+
+                    if(e.title == "How to enroll in a co-op you found on JobZone")
+                    {
+                        desc.Size = new Size(650, 50);
                     }
 
                     if(e.title == "How to enroll in a co-op you found outside of JobZone")
                     {
-                        desc.Size = new Size(550, 115);
+                        desc.Size = new Size(650, 100);
                     }
 
                     // Add to flowlayoutpanel
@@ -329,7 +350,7 @@ namespace XinP3.Modal
                 // Add link for RITJobZoneGuideLink
                 LinkLabel link = new LinkLabel();
                 link.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-                link.Size = new Size(500, 20);
+                link.Size = new Size(650, 20);
                 link.Text = c.RITJobZoneGuidelink;
                 link.LinkClicked += new LinkLabelLinkClickedEventHandler((o, e) => { System.Diagnostics.Process.Start(c.RITJobZoneGuidelink); link.LinkVisited = true; });
                 fp_resources.Controls.Add(link);

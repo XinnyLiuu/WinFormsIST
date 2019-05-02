@@ -34,7 +34,7 @@
             this.lbl_office = new System.Windows.Forms.Label();
             this.lbl_phone = new System.Windows.Forms.Label();
             this.lbl_email = new System.Windows.Forms.Label();
-            this.lbl_website = new System.Windows.Forms.Label();
+            this.ll_website = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pb_image)).BeginInit();
             this.SuspendLayout();
             // 
@@ -94,14 +94,15 @@
             this.lbl_email.Text = "Email";
             this.lbl_email.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // lbl_website
+            // ll_website
             // 
-            this.lbl_website.Location = new System.Drawing.Point(131, 368);
-            this.lbl_website.Name = "lbl_website";
-            this.lbl_website.Size = new System.Drawing.Size(214, 23);
-            this.lbl_website.TabIndex = 7;
-            this.lbl_website.Text = "Website";
-            this.lbl_website.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ll_website.Location = new System.Drawing.Point(131, 368);
+            this.ll_website.Name = "ll_website";
+            this.ll_website.Size = new System.Drawing.Size(214, 23);
+            this.ll_website.TabIndex = 7;
+            this.ll_website.TabStop = true;
+            this.ll_website.Text = "website";
+            this.ll_website.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // PeopleModal
             // 
@@ -109,7 +110,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(484, 413);
-            this.Controls.Add(this.lbl_website);
+            this.Controls.Add(this.ll_website);
             this.Controls.Add(this.lbl_email);
             this.Controls.Add(this.lbl_phone);
             this.Controls.Add(this.lbl_office);
@@ -134,6 +135,6 @@
         private System.Windows.Forms.Label lbl_office;
         private System.Windows.Forms.Label lbl_phone;
         private System.Windows.Forms.Label lbl_email;
-        private System.Windows.Forms.Label lbl_website;
+        private System.Windows.Forms.LinkLabel ll_website;
     }
 }

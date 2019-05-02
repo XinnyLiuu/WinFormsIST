@@ -24,7 +24,8 @@ namespace XinP3
             lbl_title.Text = info[0];
             pb_image.Load(info[1]);
             lbl_office.Text = info[2];
-            lbl_website.Text = info[3];
+            ll_website.Text = info[3];
+            ll_website.LinkClicked += new LinkLabelLinkClickedEventHandler((s, e) => System.Diagnostics.Process.Start(ll_website.Text));
             lbl_phone.Text = info[4];
             lbl_email.Text = info[5];
         }

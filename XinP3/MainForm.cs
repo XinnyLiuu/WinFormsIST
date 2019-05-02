@@ -9,7 +9,7 @@ using XinP3.Modal;
 
 namespace XinP3
 {
-    public partial class Main : Form
+    public partial class MainForm : Form
     {
         private REST istAPI; // Helper for using ist api
 
@@ -24,7 +24,7 @@ namespace XinP3
         private Footer footer;
 
         // Constructor
-        public Main()
+        public MainForm()
         {
             InitializeComponent();
             istAPI = new REST("http://ist.rit.edu/api"); // IST API

@@ -3,3 +3,9 @@ C:\Users\xhliu\Desktop\ISTE-340\client_c#\XinP3\RESTUtil\bin\Debug\RESTUtil.pdb
 C:\Users\xhliu\Desktop\ISTE-340\client_c#\XinP3\RESTUtil\obj\Debug\RESTUtil.csproj.CoreCompileInputs.cache
 C:\Users\xhliu\Desktop\ISTE-340\client_c#\XinP3\RESTUtil\obj\Debug\RESTUtil.dll
 C:\Users\xhliu\Desktop\ISTE-340\client_c#\XinP3\RESTUtil\obj\Debug\RESTUtil.pdb
+C:\Users\xhliu\Desktop\XinP3\RESTUtil\obj\Debug\RESTUtil.csprojAssemblyReference.cache
+C:\Users\xhliu\Desktop\XinP3\RESTUtil\obj\Debug\RESTUtil.csproj.CoreCompileInputs.cache
+C:\Users\xhliu\Desktop\XinP3\RESTUtil\obj\Debug\RESTUtil.dll
+C:\Users\xhliu\Desktop\XinP3\RESTUtil\obj\Debug\RESTUtil.pdb
+C:\Users\xhliu\Desktop\XinP3\RESTUtil\bin\Debug\RESTUtil.dll
+C:\Users\xhliu\Desktop\XinP3\RESTUtil\bin\Debug\RESTUtil.pdb
