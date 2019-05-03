@@ -326,6 +326,7 @@ namespace XinP3
             {
                 // Create label
                 Label l = new Label();
+                l.Size = new Size(650, 30);
                 l.ForeColor = System.Drawing.Color.OrangeRed;
                 l.Text = name;
 
@@ -339,6 +340,7 @@ namespace XinP3
             {
                 // Create label
                 Label l = new Label();
+                l.Size = new Size(650, 30);
                 l.ForeColor = System.Drawing.Color.OrangeRed;
                 l.Text = name;
 
